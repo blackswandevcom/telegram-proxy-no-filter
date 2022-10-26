@@ -1,0 +1,108 @@
+/**
+ * @Author: amirhp-com <its@amirhp.com>
+ * @Date:   2022/10/24 16:02:59
+ * @Last modified by:   amirhp-com <its@amirhp.com>
+ * @Last modified time: 2022/10/24 17:01:26
+ */
+@font-face {
+  font-family: bodyfont;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./font.woff") format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: bodyfont, roboto, Tahoma !important;
+  font-weight: normal;
+  margin: 0;
+  position: relative;
+  direction: rtl;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+
+#container {
+  width: 100vw;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#form,
+.quikaccess {
+  max-width: 100%;
+  width: 700px;
+}
+
+#url {
+  width: 100%;
+  font-size: 16.3px;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  direction: ltr;
+  text-align: left;
+}
+
+.quikaccess {
+  margin-top: 1rem;
+  display: flex;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  min-height: 2rem;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  direction: ltr;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+@media only screen and (max-width: 500px) {
+  form {
+    flex-direction: column;
+  }
+
+  #url {
+    font-size: 1rem;
+  }
+
+  form input {
+    width: 100%;
+    padding: 0.3rem;
+  }
+
+  button {
+    line-height: 0;
+    display: block;
+    cursor: pointer;
+    padding: 2rem;
+    height: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+}

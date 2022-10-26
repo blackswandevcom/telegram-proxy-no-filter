@@ -1,0 +1,5 @@
+/vendor/*
+/storage/*
+composer.lock
+.htaccess
+.ftpconfig
